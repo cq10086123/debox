@@ -1,0 +1,19 @@
+{
+  "version": 2,
+  "builds": [
+    {
+      "src": "install/index.php", // 指向你的主入口文件
+      "use": "@vercel/php",
+      "config": {
+        "distDir": "install",
+        "runtime": "php@7.3"
+      }
+    }
+  ],
+  "routes": [
+    {
+      "src": "/(.*)",
+      "dest": "/install/index.php" // 确保这里指向你的主入口文件
+    }
+  ]
+}
