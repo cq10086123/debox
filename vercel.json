@@ -1,15 +1,5 @@
 {
   "version": 2,
-  "builds": [
-    {
-      "src": "install/index.php",
-      "use": "@vercel/php",
-      "config": {
-        "distDir": "install",
-        "runtime": "php@7.3"
-      }
-    }
-  ],
   "routes": [
     {
       "src": "/(.*)",
